@@ -1,0 +1,194 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+section {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.sidebar {
+    width: 20%;
+    background-color: #67b5e8;
+    position: relative;
+}
+.info_header {
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 3px solid;
+    background-color: #c5c5c53d;
+}
+.profile_photo {
+    width: fit-content;
+    margin-bottom: 20px;
+    width: 15%;
+}
+.profile_photo img {
+    width: 100%;
+    border-radius: 5px;
+}
+small {
+    font-size: 12px;
+    color: #67b5e8;
+    font-weight: bold;
+}
+h1 {
+    margin: 0;
+    font-size: 40px;
+    font-weight: bold;
+}
+.info_name p {
+    margin: 5px 0px 5px 0;
+}
+.info_name {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.info_social {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 15px;
+    margin-top: 20px;
+}
+.info_social a svg {
+    font-size: 20px;
+}
+.info_me {
+    width: 70%;
+    margin-left: 30px;
+}
+.info_me h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 10%;
+    height: 5px;
+    background-color: #67b5e8;
+}
+.info_me h2 {
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+}
+.info_me ul li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.info_me ul li .title {
+    width: 200px;
+}
+.info_me ul {
+    list-style: none;
+    padding: 0;
+}
+.bolum {
+    border-bottom: 1px solid #0000001f;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+}
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 10px 10px 23px 0px rgb(103 181 232 / 41%);
+}
+.box svg {
+    font-size: 25px;
+    fill: rgba(103,181,232);
+    border-bottom: 1px solid #67b5e84d;
+    padding: 20px;
+} 
+.bolum .skill {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+.work {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    background-color: white;
+    padding: 0px 10px;
+    margin: 10px 0;
+}
+.hobies img {
+    width: 100%;
+    height: 200px;
+}
+.hobie {
+    width: 25%;
+    overflow: hidden;
+    position: relative;
+}
+.hobies {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    overflow: hidden;
+}
+.hobies p {
+    padding: 10px;
+    background: black;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: -200%;
+    transition: 0.4s;
+}
+.hobies img {
+    width: 100%;
+    height: 200px;
+}
+.sidebar p {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    border-bottom: 3px solid;
+    padding: 40px 0 40px 0;
+    margin: 0;
+    color: white;
+}
+.menu a {
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    width: 87%;
+    left: 0;
+    padding: 20px;
+    border-bottom: 1px solid #ffffff45;
+    transition: 0.4s;
+}
+.menu:hover a {
+    color: black;
+    background-color: white;
+}
+.menu {
+    position: relative;
+    height: 60px;
+}
+html {
+	scroll-behavior: smooth;
+}
+.menus {
+    position: sticky;
+    top: 0;
+}
+.hobie:hover p {
+    left: 0;
+}
